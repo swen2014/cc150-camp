@@ -4,6 +4,8 @@ import java.util.*;
  * Created by steven on 3/11/15.
  */
 public class assign9point4 {
+    /*      Write a method to return all subsets of a set.
+    * */
 
     public List<List<Integer>> subsets(int[] S) {
         Arrays.sort(S);

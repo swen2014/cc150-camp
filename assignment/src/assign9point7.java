@@ -7,8 +7,8 @@ public class assign9point7 {
         Yellow, Green, Red, White, Black
     }
     public static void fillColor(Color[][] arr, int x, int y, Color origin, Color fresh){
-        if (x < 0 || x > arr[0].length || y < 0 || y > arr.length)
-        if (arr[x][y] != origin){
+        if (x < 0 || x > arr[0].length || y < 0 || y > arr.length) return;
+        if (arr[y][x] != origin){
             return;
         }else {
             arr[y][x] = fresh;

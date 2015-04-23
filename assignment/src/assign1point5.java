@@ -14,8 +14,8 @@ public class assign1point5 {
     public static String stringCompression(String a){
         StringBuilder res =new StringBuilder();
         char tmp = a.charAt(0);
-        int count=0;
-        for(int i=0; i<a.length(); i++){
+        int count=1;
+        for(int i=1; i<a.length(); i++){
             if(a.charAt(i)!=tmp){
                 res.append(tmp);
                 res.append(count);

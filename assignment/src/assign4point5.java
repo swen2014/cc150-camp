@@ -1,4 +1,3 @@
-import javax.swing.tree.TreeNode;
 
 /**
  * Created by steven on 2/4/15.
@@ -24,16 +23,18 @@ public class assign4point5 {
         return a.value > b.value && isright(a.left,b) && isright(a.right,b);
     }
 
-
-    public class TreeNode {
-        int value;
-        TreeNode left;
-        TreeNode right;
-        TreeNode parent; /* only used for certain cases */
-
-        public TreeNode(int x) {
-            value = x;
-        }
-
+    public boolean isValidBST(TreeNode root) {
+        return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
+
+    public boolean isBST(TreeNode node, int low, int high){
+        if(node == null)
+            return true;
+
+        if(low < node.value && node.value < high)
+            return isBST(node.left, low, node.value) && isBST(node.right, node.value, high);
+        else
+            return false;
+    }
+
 }

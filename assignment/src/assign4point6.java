@@ -10,7 +10,7 @@ public class assign4point6 {
     *             / \
     *            C   E
     * */
-    public assign4point5.TreeNode findNext(assign4point5.TreeNode n){
+    public TreeNode findNext(TreeNode n){
         if (n == null){
             return null;
         }
@@ -25,7 +25,7 @@ public class assign4point6 {
         }
     }
 
-    public assign4point5.TreeNode leftmostchild(assign4point5.TreeNode n){
+    public TreeNode leftmostchild(TreeNode n){
 //        if (n == null)
 //            return null;
         if (n.left == null)
